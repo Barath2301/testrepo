@@ -1,0 +1,114 @@
+/* Bordered form */
+form {
+    position: relative; /* Position relative to its container */
+    width: 400px; /* Set fixed width */
+    height: 325px; /* Set fixed height */
+    background-color: #fff;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between input fields and buttons */
+    margin-top: 80px; /* Ensure form is below the logo */
+    margin-left: 450px;
+}
+ 
+/* Heading */
+form h1 {
+    font-size: 24px; /* Adjust font size for the heading */
+    margin-bottom: 7px; /* Space below the heading */
+}
+ 
+form p {
+    font-size: 12px;
+}
+ 
+/* Adjust space between label and input fields */
+form label {
+    font-size: 12px;
+    margin-bottom: 6px; /* Reduced margin below labels */
+}
+ 
+form label input[type=checkbox] {
+    font-size: 12px;
+}
+ 
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: calc(100%); /* Full width minus padding */
+    padding: 6px; /* Reduced padding inside the input */
+    margin-bottom: 5px; /* Space below input fields */
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    font-size: 12px; /* Reduced font size for input fields */
+}
+ 
+/* Align Remember me checkbox and label */
+form .remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Added margin to move it down */
+    margin-bottom: 20px; /* Increased space below the checkbox and label */
+}
+ 
+form .remember-me input[type=checkbox] {
+    margin-right: 5px; /* Space between checkbox and label text */
+}
+ 
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 6px 15px; /* Reduced padding inside the button */
+    margin: 6px 0; /* Margin around buttons */
+    border: none;
+    cursor: pointer;
+    width: calc(50% - 4px); /* Width for floating buttons */
+    opacity: 0.9;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px; /* Reduced font size for buttons */
+ 
+}
+ 
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+ 
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    background-color: #f44336;
+}
+ 
+/* Style for the signup button */
+.signupbtn {
+    background-color: #04AA6D;
+}
+ 
+/* Align buttons in the same line */
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure buttons are vertically aligned */
+}
+ 
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 1px;
+    font-size: 12px;
+}
+ 
+/* Responsive design for small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+        margin: 0;
+    }
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+ 
